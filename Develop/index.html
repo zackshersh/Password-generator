@@ -25,16 +25,15 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-          <div id=generatePrompts>
+          <div style="display: none;" id=generatePrompts>
             <section class=selectorSection>
               <h3>Number of Charecters:</h3>
-              <input id="charNumCheck" type="range" value="8" min="8" max="128">
-              <label for="charNumCheck"></label>
+              <input id="charNumRange" type="range" value="8" min="8" max="128">
+              <label id=charNumDisplay for="charNumRange">8 Charecters</label>
             </section>
             <section class=selectorSection>
               <h3>Included Charecters:</h3>
-              <input id="lowerCaseCheck" type="checkbox">
+              <input id="lowerCaseCheck" type="checkbox" checked>
               <label for="lowerCaseCheck">Lower Case</label>
               <input id="upperCaseCheck" type="checkbox">
               <label for="upperCaseCheck">Upper Case</label>
@@ -45,6 +44,7 @@
             </section>
 
           </div>
+          <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
